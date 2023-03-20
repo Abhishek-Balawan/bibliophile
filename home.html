@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background-image: url(books_background.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        h2{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <script>
+        $(document).ready(function(){
+          $('[data-toggle="tooltip"]').tooltip();   
+        });
+        </script>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" style="font:icon">A world of bibliophiles</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="active"><a href="home.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+    </ul>
+  </div>
+</nav>
+
+</br>
+</br>
+</br> 
+  
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" style="height: 50%;" data-interval="5000">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+          </ol>
+      
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+      
+            <div class="item active" >
+              <img src="Nikola_Tesla_1.jpg" alt="Nikola_Tesla" style="margin: auto; width: 65%; height: 400px;">
+              <div class="carousel-caption">
+                <h2>“Of all things, I liked books best.”</h2>
+                <h3>- Nikola Tesla</h3>
+              </div>
+            </div>
+      
+            <div class="item">
+              <img src="bill_gates.jpeg" alt="bill_gates" style="margin: auto; height: 400px;">
+              <div class="carousel-caption">
+                <h3>“There are few things I love more than being surrounded by books”</h3>
+                <p>- Bill Gates</p>
+              </div>
+            </div>
+          
+            <div class="item">
+              <img src="books.jpg" alt="books" style="width:100%; height: 400px;">
+              <div class="carousel-caption">
+                <h3>"Dreams, books, are each a world; and books, we know,
+                    Are a substantial world, both pure and good:
+                    Round these, with tendrils strong as flesh and blood,
+                    Our pastime and our happiness will grow"</h3>
+                <p>- William Wordsworth</p>
+              </div>
+            </div>
+
+            <div class="item">
+                <img src="books1.jpg" alt="books" style="margin: auto; height: 400px; width: 75%;">
+                <div class="carousel-caption">
+                  <h3>"Books and doors are same thing. You open them, and you go through into another world."</h3>
+                </div>
+              </div>
+        
+          </div>
+      
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+      
+
+          <div class="container">
+            
+            <h1 style="font:icon; font-size:20px">Deciding what to read next? Here are some suggestions for you:</h1>
+
+            <div class="container">
+                <!-- Fiction -->
+                <div class="container">
+                <div class="accordion">
+                    <div class="panel panel-default">
+                      <div class="accordion-toggle" aria-expanded="true" data-toggle="collapse" data-parent="#accordion" href="#fiction">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                            <a >
+                              Fiction
+                            </a>
+                          </h4>
+                        </div>
+                      </div>
+                    <div id="fiction" class="collapse">
+                  
+                        <!-- Angels and demons image ref -->
+                        
+                        <div style="width: 33%; float: left; height: 100%;">
+                            <div class="opacity-0">
+                            <div class="panel-body" style="height: 250px; width: 200px;">
+                                <a href="#" data-toggle="tooltip" title="Click on the image to read about the plot.">
+                              <img src="dan_brown_angels_demons.jpg" alt="Angels and Demons" style="margin: auto; height: 100%; width: 100%;" data-toggle="modal" data-target="#angels_and_demons">
+                                </a>
+                            </div>
+                            <div>Angels and Demons</div>
+                            <div> by Dan Brown</div>
+                          </div>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="angels_and_demons" role="dialog">
+                          <div class="modal-dialog">
+                          
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Angels and Demons - by Dan Brown</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p>When world-renowned Harvard symbologist Robert Langdon is summoned to a Swiss research facility to analyze a mysterious symbol — seared into the chest of a murdered physicist — he discovers evidence of the unimaginable: the resurgence of an ancient secret brotherhood known as the Illuminati… the most powerful underground organization ever to walk the earth.</p>
+                        </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                              </div>
+                            </div>
+                            
+                          </div>
+                        </div>
+
+                    <!-- Frankenstein image ref -->
+                    <div style="width: 33%;  float: left;">
+                        <div class="opacity-0">
+                        
+                        
+                        <div class="panel-body" style="height: 250px; width: 250px;">
+                            <a href="#" data-toggle="tooltip" title="Click on the image to read about the plot.">
+                            <img src="frankenstein.jpg" alt="Frankenstein" style="height: 100%; width: 100%;" data-toggle="modal" data-target="#frankenstein">
+                                </a>
+                        </div>
+                        <div>Frankenstein</div>
+                        <div>by Marry Shelly</div>
+                        </div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="frankenstein" role="dialog">
+                        <div class="modal-dialog">
+                        
+                          <!-- Modal content-->
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              <h4 class="modal-title">Frenkenstein - by Marry Shelly</h4>
+                            </div>
+                            <div class="modal-body">
+                              <p>Frankenstein tells the story of gifted scientist Victor Frankenstein who succeeds in giving life to a being of his own creation. However, this is not the perfect specimen he imagines that it will be, but rather a hideous creature who is rejected by Victor and mankind in general. The Monster seeks its revenge through murder and terror.</p>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                          
+                        </div>
+                      </div>
+
+                    <!-- 1984 image ref -->
+                    <div style="width: 33%;  float: left;">
+                        
+                        <div class="opacity-0">
+                        <div class="panel-body" style="height: 250px; width: 200px;">
+                            <a href="#" data-toggle="tooltip" title="Click on the image to read about the plot.">
+                            <img src="1984.png" alt="nineteen_eighty_four" style="height: 100%; width: 100%;" data-toggle="modal" data-target="#nineteen_eighty_four">
+                                </a>
+                        </div>
+                        <div>1984</div>
+                        <div>Geroge Orwell</div>
+                    </div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="nineteen_eighty_four" role="dialog">
+                        <div class="modal-dialog">
+                        
+                          <!-- Modal content-->
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              <h4 class="modal-title">1984 - by George Orwell</h4>
+                            </div>
+                            <div class="modal-body">
+                              <p>‘Big Brother’ controls every aspect of people’s lives. It has invented the language ‘Newspeak’ in an attempt to completely eliminate political rebellion; created ‘Throughtcrimes’ to stop people even thinking of things considered rebellious. The party controls what people read, speak, say and do with the threat that if they disobey, they will be sent to the dreaded Room 101 as a looming punishment.</p>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                          
+                        </div>
+                      </div>
+    
+                    </div>
+                </div>
+                </div>
+                
+                </div>
+                <!-- History -->
+                
+                <div class="container">
+                <div class="accordion" >
+                    <div class="panel panel-default">
+                      <div class="accordion-toggle" aria-expanded="true" data-toggle="collapse" data-parent="#accordion" href="#history">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                            <a>
+                              History
+                            </a>
+                          </h4>
+                        </div>
+                      </div>
+                    <div id="history" class="collapse">
+                        
+                        <div style="width: 33%; float: left;">
+                            <div class="opacity-0">
+                            <div class="panel-body" style="height: 250px; width: 200px;">
+                                <a href="#" data-toggle="tooltip" title="Click on the image to read about the book.">
+                              <img src="india_wonder.jpg" alt="The wonder that India was" style="margin: auto; height: 100%; width: 100%;" data-toggle="modal" data-target="#the_wonder_that_india_was">
+                                </a>
+                            </div>
+                            <div>The wonder that India was</div>
+                            <div> by A.L. Basham</div>
+                          </div>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="the_wonder_that_india_was" role="dialog">
+                          <div class="modal-dialog">
+                          
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">The wonder that India was - A.L.Basham</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p>A Survey of the Culture of the Indian Sub-Continent Before the Coming of the Muslims, is a book on Indian history written by Arthur Llewellyn Basham and first published in 1954.</p>
+                        </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                              </div>
+                            </div>
+                            
+                          </div>
+                        </div>
+
+                    
+                    <div style="width: 33%;  float: left;">
+                        <div class="opacity-0">
+                        
+                        
+                        <div class="panel-body" style="height: 250px; width: 250px;">
+                            <a href="#" data-toggle="tooltip" title="Click on the image to read about the book.">
+                            <img src="ancient_india.jpg" alt="Ancient India" style="height: 100%; width: 100%;" data-toggle="modal" data-target="#ancinet_india">
+                                </a>
+                        </div>
+                        <div>India's ancient past</div>
+                        <div>by R.S. Sharma</div>
+                        </div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="ancinet_india" role="dialog">
+                        <div class="modal-dialog">
+                        
+                          <!-- Modal content-->
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              <h4 class="modal-title">India's ancient past - by <R class="S Sharma"></R></h4>
+                            </div>
+                            <div class="modal-body">
+                              <p>Ram Sharan Sharma (26 November 1919 – 20 August 2011) was an Indian historian and Indologist who specialised in the history of Ancient and early Medieval India. This book of his covers indian history from pre-historic period to coming of Islamic rules to India.</p>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                          
+                        </div>
+                      </div>
+
+                    
+                    <div style="width: 33%;  float: left;">
+                        
+                        <div class="opacity-0"></div>
+                        <div class="panel-body" style="height: 250px; width: 200px;">
+                            <a href="#" data-toggle="tooltip" title="Click on the image to read about the book.">
+                            <img src="sepoy_mutiny.jpg" alt="sepoy_mutiny" style="height: 100%; width: 100%;" data-toggle="modal" data-target="#sepoy_mutiny">
+                                </a>
+                        </div>
+                        <div>The sepoy mutiny and the revolt of 1857</div>
+                        <div>R.C.Majumdar</div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="sepoy_mutiny" role="dialog">
+                        <div class="modal-dialog">
+                        
+                          <!-- Modal content-->
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              <h4 class="modal-title">The sepoy mutiny and the revolt of 1857 - by R.C.Majumdar</h4>
+                            </div>
+                            <div class="modal-body">
+                              <p>The great outbreak of 1857 is a memorable episode in Indian History. There is no other event in the history of India of which we possess so many contemporary or nearly contemporary records and accounts, and memoirs, reviews, reminiscences, and hitorical studies. Yet there is no end of controversy, even now, not only as regards the cause of the movement, but also about its precise character. It is primarily this aspect of the question which forms the subject matter of his book.</p>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                          
+                        </div>
+                      </div>
+    
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Science -->
+
+            <div class="container">
+                <div class="accordion">
+                    <div class="panel panel-default">
+                      <div class="accordion-toggle"  aria-expanded="true" data-toggle="collapse" data-parent="#accordion" href="#science">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                            <a >
+                              Science
+                            </a>
+                          </h4>
+                        </div>
+                        </div>
+            
+                    <div id="science" class="collapse">
+                        
+                        
+                        <div style="width: 33%; float: left; height: 100%;">
+                            <div class="opacity-0">
+                            <div class="panel-body" style="height: 250px; width: 200px;">
+                                <a href="#" data-toggle="tooltip" title="Click on the image to read about the book.">
+                              <img src="theory_of_everything.jpg" alt="The theory of everything" style="margin: auto; height: 100%; width: 100%;" data-toggle="modal" data-target="#theory_of_everything">
+                                </a>
+                            </div>
+                            <div>The theory of everything</div>
+                            <div> by Stephen Hawking</div>
+                          </div>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="theory_of_everything" role="dialog">
+                          <div class="modal-dialog">
+                          
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">The theory of everything - by Stephen Hawking</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p>Collector's Edition with Audiobook read by the Author, Stephen Hawking is widely believed to be one of the world's greatest minds, a brilliant theoretical physicist whose work helped to reconfigure models of the universe and to redefine what's in it. Imagine sitting in a room listening to Hawking discuss these achievements and place them in historical context. It would be like hearing Christopher Columbus on the New World. Hawking presents a series of seven lectures, covering everything from big bang to black holes to string theory, that capture not only the brilliance of Hawking's mind but his characteristic wit as well. Of his research on black holes, which absorbed him for more than a decade, he says, "It might seem a bit like looking for a black cat in a coal cellar". Hawking begins with a history of ideas about the universe, from Aristotle's determination that the Earth is round to Hubble's discovery, over 2000 years later, that the universe is expanding. Using that as a launching pad, he explores the reaches of modern physics, including theories on the origin of the universe (example, the big bang), the nature of black holes and space-time.</p>
+                        </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                              </div>
+                            </div>
+                            
+                          </div>
+                        </div>
+
+                        
+                    <div style="width: 33%;  float: left;">
+                        <div class="opacity-0">
+                        
+                        
+                        <div class="panel-body" style="height: 250px; width: 250px;">
+                            <a href="#" data-toggle="tooltip" title="Click on the image to read about the book.">
+                            <img src="god_equation.jpg" alt="The God equation" style="height: 100%; width: 100%;" data-toggle="modal" data-target="#god_equation">
+                                </a>
+                        </div>
+                        <div>The God Equation</div>
+                        <div>by Michio Kaku</div>
+                        </div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="god_equation" role="dialog">
+                        <div class="modal-dialog">
+                        
+                          <!-- Modal content-->
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              <h4 class="modal-title">The God Equation - by Michio Kaku</h4>
+                            </div>
+                            <div class="modal-body">
+                              <p>The God Equation: The Quest for a Theory of Everything is a popular science book by the futurist and physicist Michio Kaku. The book was initially published on April 6, 2021 by Doubleday. The book debuted at number six on The New York Times nonfiction best-seller list for the week ending April 10, 2021.</p>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                          
+                        </div>
+                      </div>
+
+                      
+                    <div style="width: 33%;  float: left;">
+                        
+                        <div class="opacity-0">
+                        <div class="panel-body" style="height: 250px; width: 200px;">
+                            <a href="#" data-toggle="tooltip" title="Click on the image to read about the book.">
+                            <img src="parallel_universe.jpg" alt="Parallel Universe" style="height: 100%; width: 100%;" data-toggle="modal" data-target="#parallel_universe">
+                                </a>
+                        </div>
+                        <div>Parallel worlds</div>
+                        <div>Michio Kaku</div>
+                    </div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="parallel_universe" role="dialog">
+                        <div class="modal-dialog">
+                        
+                          <!-- Modal content-->
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              <h4 class="modal-title">Parallel worlds - by Michio Kaku</h4>
+                            </div>
+                            <div class="modal-body">
+                              <p>In Parallel Worlds, Michio Kaku tells readers to ask themselves about what will happen when humans deplete their natural resources. Kaku talks about his scientific views, that there might be other universes co-existing simultaneously. Kaku is a logician, who takes readers into the world of looming black holes and other fascinating aspects of the universe. Kaku stretches the reader's imagination, by talking about the time he asked in Sunday school about God's mother. He tells the story of the ancient egg from Chinese mythology in this book. The egg had expanded and one half became the ground, while the other became the sky. Today's internet, telescopes and other innovative technologies help humans probe deeper into the vast universe. Parallel Worlds was published by Penguin UK in 2006 and is available in paperback. Key Features: This book has been featured on various television shows and several videos have been made explaining the content of this book.</p>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                          
+                        </div>
+                      </div>
+    
+                    </div>
+                </div>
+                </div>
+                
+                </div>
+
+                <!-- Philosophy -->
+                <div class="container">
+                    <div class="accordion">
+                        <div class="panel panel-default">
+                          <div class="accordion-toggle"  aria-expanded="true" data-toggle="collapse" data-parent="#accordion" href="#philosophy">
+                            <div class="panel-heading">
+                              <h4 class="panel-title">
+                                <a>
+                                  Philosophy
+                                </a>
+                              </h4>
+                            </div>
+                          </div>
+
+                        <div id="philosophy" class="collapse">
+
+                            <div style="width: 33%; float: left; height: 100%;">
+                                <div class="opacity-0">
+                                <div class="panel-body" style="height: 250px; width: 200px;">
+                                    <a href="#" data-toggle="tooltip" title="Click on the image to read about the book.">
+                                  <img src="alchemist.jpg" alt="The alchemist" style="margin: auto; height: 100%; width: 100%;" data-toggle="modal" data-target="#alchemist">
+                                    </a>
+                                </div>
+                                <div>The alchemist</div>
+                                <div> by Paolo Coelho</div>
+                              </div>
+                            </div>
+                            <!-- Modal -->
+                            <div class="modal fade" id="alchemist" role="dialog">
+                              <div class="modal-dialog">
+                              
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">The alchemist - by Paolo Coelho</h4>
+                                  </div>
+                                  <div class="modal-body">
+                                    <p>Paulo Coelho's enchanting novel has inspired a devoted following around the world. This story, dazzling in its powerful simplicity and inspiring wisdom, is about an Andalusian shepherd boy named Santiago who travels from his homeland in Spain to the Egyptian desert in search of a treasure buried in the Pyramids.</p>
+                            </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                  </div>
+                                </div>
+                                
+                              </div>
+                            </div>
+    
+                            
+                        <div style="width: 33%;  float: left;">
+                            <div class="opacity-0">
+                            
+                            
+                            <div class="panel-body" style="height: 250px; width: 250px;">
+                                <a href="#" data-toggle="tooltip" title="Click on the image to read about the book.">
+                                <img src="meditation.jpg" alt="Meditations" style="height: 100%; width: 100%;" data-toggle="modal" data-target="#meditation">
+                                    </a>
+                            </div>
+                            <div>Meditations</div>
+                            <div>by Marcus Aurelius</div>
+                            </div>
+                        </div>
+    
+                        <!-- Modal -->
+                        <div class="modal fade" id="meditation" role="dialog">
+                            <div class="modal-dialog">
+                            
+                              <!-- Modal content-->
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  <h4 class="modal-title">Meditations - by Marcus Aurelius</h4>
+                                </div>
+                                <div class="modal-body">
+                                  <p>'Their icy blasts are refreshing and restorative. They tell you the worst. And having heard the worst, you feel less bad' Blake MorrisonWritten in Greek by the only Roman emperor who was also a philosopher, without any intention of publication, the Meditations of Marcus Aurelius offer a remarkable series of challenging spiritual reflections and exercises developed as the emperor struggled to understand himself and make sense of the universe. While the Meditations were composed to provide personal consolation and encouragement, Marcus Aurelius also created one of the greatest of all works of philosophy: a timeless collection that has been consulted and admired by statesmen, thinkers and readers throughout the centuries.Translated with notes by MARTIN HAMMOND with an Introduction by DISKIN CLAY</p>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                              
+                            </div>
+                          </div>
+    
+                          
+                        <div style="width: 33%;  float: left;">
+                            
+                            <div class="opacity-0">
+                            <div class="panel-body" style="height: 250px; width: 200px;">
+                                <a href="#" data-toggle="tooltip" title="Click on the image to read about the book.">
+                                <img src="frankl.jpg" alt="Man's search for meaning" style="height: 100%; width: 100%;" data-toggle="modal" data-target="#mans_search_for_meaning">
+                                    </a>
+                            </div>
+                            <div>Man's search for meaning</div>
+                            <div>Victor Frankl</div>
+                        </div>
+                        </div>
+    
+                        <!-- Modal -->
+                        <div class="modal fade" id="mans_search_for_meaning" role="dialog">
+                            <div class="modal-dialog">
+                            
+                              <!-- Modal content-->
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  <h4 class="modal-title">Man's search for meaning - by Victor Frankl</h4>
+                                </div>
+                                <div class="modal-body">
+                                  <p>A prominent Viennese psychiatrist before the war, Viktor Frankl was uniquely able to observe the way that he and other inmates coped with the experience of being in Auschwitz. He noticed that it was the men who comforted others and who gave away their last piece of bread who survived the longest - and who offered proof that everything can be taken away from us except the ability to choose our attitude in any given set of circumstances. The sort of person the prisoner became was the result of an inner decision and not of camp influences alone. Only those who allowed their inner hold on their moral and spiritual selves to subside eventually fell victim to the camp's degenerating influence - while those who made a victory of those experiences turned them into an inner triumph. Frankl came to believe that man's deepest desire is to search for meaning and purpose. This outstanding work offers us all a way to transcend suffering and find significance in the art of living.</p>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                              
+                            </div>
+                          </div>
+        
+                        </div>
+                    </div>
+                    </div>
+                    
+                    </div>
+
+                <!-- Autobiography -->
+                <div class="container">
+                    <div class="accordion">
+                        <div class="panel panel-default">
+                          <div  class="accordion-toggle"  aria-expanded="true" data-toggle="collapse" data-parent="#accordion" href="#biography">
+                            <div class="panel-heading">
+                              <h4 class="panel-title">
+                                <a>
+                                  Autobiography
+                                </a>
+                              </h4>
+                            </div>
+                          </div>
+                        <div id="biography" class="collapse">
+                            
+                            
+                            <div style="width: 33%; float: left; height: 100%;">
+                                <div class="opacity-0">
+                                <div class="panel-body" style="height: 250px; width: 200px;">
+                                    <a href="#" data-toggle="tooltip" title="Click on the image to read about the book.">
+                                  <img src="my_experiments_with_truth.jpg" alt="My experiments with truth" style="margin: auto; height: 100%; width: 100%;" data-toggle="modal" data-target="#my_experiments_with_tryth">
+                                    </a>
+                                </div>
+                                <div>My experiments with truth</div>
+                                <div> by Mahatma Gandhi</div>
+                              </div>
+                            </div>
+                            <!-- Modal -->
+                            <div class="modal fade" id="my_experiments_with_tryth" role="dialog">
+                              <div class="modal-dialog">
+                              
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">My experiments with truth - by Mahatma Gandhi</h4>
+                                  </div>
+                                  <div class="modal-body">
+                                    <p>This unusual autobiography "The Story of My Experiments with Truth", is a window to the workings of Mahatma Gandhi's mind- a window to the emotions of his heart, a window to understanding what drove this seemingly ordinary man to the heights of being the father of a nation- India. Starting with his days as a boy, Gandhi takes one through his trials and turmoils and situations that moulded his philosophy of life- going through child marriage, his studies in England, practicing Law in South Africa- and his Satyagraha there- to the early beginnings of the Independence movement in India. He did not aim to write an autobiography but rather share the experience of his various experiments with truth to arrive at what he perceived as Absolute Truth- the ideal of his struggle against racism, violence and colonialism.</p>
+                            </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                  </div>
+                                </div>
+                                
+                              </div>
+                            </div>
+    
+                            
+                        <div style="width: 33%;  float: left;">
+                            <div class="opacity-0">
+                            
+                            
+                            <div class="panel-body" style="height: 250px; width: 250px;">
+                                <a href="#" data-toggle="tooltip" title="Click on the image to read about the book.">
+                                <img src="the_wings_of_fire.jpg" alt="The wings of fire" style="height: 100%; width: 100%;" data-toggle="modal" data-target="#wings_of_fire">
+                                    </a>
+                            </div>
+                            <div>The wings of fire</div>
+                            <div>by A.P.J. Abdul Kalaam</div>
+                            </div>
+                        </div>
+    
+                        <!-- Modal -->
+                        <div class="modal fade" id="wings_of_fire" role="dialog">
+                            <div class="modal-dialog">
+                            
+                              <!-- Modal content-->
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  <h4 class="modal-title">The wings of fire - by A.P.J. Abdul Kalaam</h4>
+                                </div>
+                                <div class="modal-body">
+                                  <p>Every common man who by his sheer grit and hard work achieves success should share his story with the rest for they may find inspiration and strength to go on, in his story. The 'Wings of Fire' is one such autobiography by visionary scientist Dr. APJ Abdul Kalam, who from very humble beginnings rose to be the President of India. The book is full of insights, personal moments and life experiences of Dr. Kalam. It gives us an understanding on his journey of success. Dr. Kalam by narrating his life journey evokes the reader to identify with one’s inner fire and potential, for he was of the firm belief that each one of us was born with the strength and potential to make a tangible change in the world. How he inspired himself to achieve dreams and how he went about accomplishing so much is what the book captures nicely. The book recollects many anecdotes and stories from childhood, his time at school and college. The time spent at the Langley Research Center, NASA and Wallops Flight Facility gets a lot of attention. Personal tragedies have not been left out. The time when he lost his father and how he felt when conferred with many awards like the Padma Bhushan have been written in much detail. The second half of the book deals with Dr Kalam, the scientist who made a significant contribution in developing the countries guided missile program, a pioneering effort for the security of the nation. It's not with reason that he was nicknamed as the 'Missile Man of India'. The book also contains 24 photographs at various stages of his life. Authored by Dr APJ Abdul Kalam and Mr. Arun Tiwari, the 180 page book 'The Wings of Fire' was first published in the year 2000. Mr Tiwari is a well-known missile scientist who has worked with Dr. Kalam. Having become a bestseller, the book has even been translated into thirteen languages, which includes Chinese and French. About the Author Dr APJ Abdul Kalam from 2002 to 2007 served as the 11th President of India. Greatly admired all over India, he was a scientist by profession, who played a leading role in developing the country's missile program. From humble roots in Rameswaram, Tamil Nadu, Dr Kalam in an inspirational autobiography 'The Wings of Fire' traces the rise and the mark he made in life. Mr. Arun Tiwari, a scientist, was a colleague of Dr Kalam.</p>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                              
+                            </div>
+                          </div>
+    
+                          
+                        <div style="width: 33%;  float: left;">
+                            
+                            <div class="opacity-0">
+                            <div class="panel-body" style="height: 250px; width: 200px;">
+                                <a href="#" data-toggle="tooltip" title="Click on the image to read about the book.">
+                                <img src="mandela.jpg" alt="Long walk to freedom" style="height: 100%; width: 100%;" data-toggle="modal" data-target="#long_walk_to_freedom">
+                                    </a>
+                            </div>
+                            <div>Long walk to freedom</div>
+                            <div>By Nelson Mandela</div>
+                        </div>
+                        </div>
+    
+                        <!-- Modal -->
+                        <div class="modal fade" id="long_walk_to_freedom" role="dialog">
+                            <div class="modal-dialog">
+                            
+                              <!-- Modal content-->
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  <h4 class="modal-title">Long walk to freedom - by Nelson Mandela</h4>
+                                </div>
+                                <div class="modal-body">
+                                  <p>Nelson Mandela was one of the great moral and political leaders of his time: an international hero whose lifelong dedication to the fight against racial oppression in South Africa won him the Nobel Peace Prize and the presidency of his country. After his triumphant release in 1990 from more than a quarter-century of imprisonment, Mandela was at the center of the most compelling and inspiring political drama in the world. As president of the African National Congress and head of South Africa's antiapartheid movement, he was instrumental in moving the nation toward multiracial government and majority rule. He is still revered everywhere as a vital force in the fight for human rights and racial equality.
+
+                                    Long Walk to Freedom is his moving and exhilarating autobiography, destined to take its place among the finest memoirs of history's greatest figures. Here for the first time, Nelson Rolihlahla Mandela told the extraordinary story of his life -- an epic of struggle, setback, renewed hope, and ultimate triumph.</p>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                              
+                            </div>
+                          </div>
+        
+                        </div>
+                    </div>
+                    </div>
+                    
+                    </div>
+                </div>
+              </div>
+
+        
+          </div>
+
+</body>
+</html>

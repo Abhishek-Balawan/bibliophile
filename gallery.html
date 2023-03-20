@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+      body{
+            background-image: url(books_background.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .democlass {
+          color: red;
+        }
+        </style>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">A world of bibliophiles</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="home.html">Home</a></li>
+      <li class="active"><a href="gallery.html">Gallery</a></li>
+      
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li>
+        <a data-toggle="modal" data-target="#outer_cart_list">
+            <i class="fa fa-shopping-cart" style="color: white; font-size:35px;">
+                <span id="cart_img" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                </span>
+            </i>
+        </a>
+        
+        
+        
+          
+
+    </li>
+    </ul>
+
+
+  </div>
+</nav>
+
+</br>
+</br>
+</br>
+</br> 
+
+<div class="modal fade" id="outer_cart_list" role="dialog">
+  <div class="modal-dialog" id="cart_list">
+  
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header"> 
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 id="cart_title" class="modal-title">Your cart is empty</h4>
+      </div>
+          <div class="modal-body" id="cart_item">
+             
+          </div>
+      <div class="modal-footer">
+      <div id="price_total" style="float:left"></div>
+        <div>
+          <a id="thank_you" class="btn btn-default" href="payment.html" target="_blank">Proceed for payment</a>
+          </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+
+<h1 style="font:icon; font-size:20px">Our collections:</h1>
+
+<div style="width: 33%; float: left; height: 100%;">
+    <div id="dan_brown_angels_demons" class="opacity-0">
+    <div class="panel-body" style="height: 250px; width: 200px;">
+      <img src="dan_brown_angels_demons.jpg" alt="Angels and Demons" style="margin: auto; height: 100%; width: 100%;" data-toggle="modal">
+       
+    <div id="book">Angels and Demons</div>
+    <div id="author"> Dan Brown</div>
+    <div id="price"> 200 </div>
+    <button onclick="addToCart('dan_brown_angels_demons')">Add to Cart</button>
+    </div>
+    
+  </div>
+</div>
+
+<div style="width: 33%;  float: left;">
+    <div id="frankenstein" class="opacity-0">
+    
+    <div class="panel-body" style="height: 250px; width: 250px;">
+        <img src="frankenstein.jpg" alt="Frankenstein" style="height: 100%; width: 100%;">
+          
+    </div>
+    <div id="book">Frankenstein</div>
+    <div id="author">Marry Shelly</div>
+    <div id="price"> 150 </div>
+    <button onclick="addToCart('frankenstein')">Add to Cart</button>
+    </div>
+</div>
+
+<div style="width: 33%; float: left;">
+  <div id="theory_everything" class="opacity-0">
+  <div class="panel-body" style="height: 250px; width: 200px;">
+    <img src="theory_of_everything.jpg" alt="The theory of everything" style="height: 100%; width: 100%;">
+   </div>
+  <div id="book">The theory of everything</div>
+  <div id="author">by Stephen Hawking</div>
+  <div id="price"> 150 </div>
+  <button onclick="addToCart('theory_everything')">Add to Cart</button>
+</div>
+</div>
+
+<div style="width: 33%;  float: left;">
+  <div id="god_equation" class="opacity-0">
+  
+  <div class="panel-body" style="height: 250px; width: 200px;">
+      <img src="god_equation.jpg" alt="The God equation" style="height: 100%; width: 100%;">
+  </div>
+  <div id="book">The God Equation</div>
+  <div id="author">by Michio Kaku</div>
+  <div id="price"> 350 </div>
+  <button onclick="addToCart('god_equation')">Add to Cart</button>
+  </div>
+</div>
+
+<div style="width: 33%;  float: left;">
+                        
+  <div id="parallel_universe" class="opacity-0">
+  <div class="panel-body" style="height: 250px; width: 200px;">
+      <img src="parallel_universe.jpg" alt="Parallel Universe" style="height: 100%; width: 100%;">
+  </div>
+  <div id="book">Parallel worlds</div>
+  <div id="author">Michio Kaku</div>
+  <div id="price"> 450 </div>
+  <button onclick="addToCart('parallel_universe')">Add to Cart</button>
+</div>
+</div>
+
+<div style="width: 33%; float: left; height: 100%;">
+  <div id="alchemist" class="opacity-0">
+  <div class="panel-body" style="height: 250px; width: 200px;">
+    <img src="alchemist.jpg" alt="The alchemist" style="margin: auto; height: 100%; width: 100%;" >
+  </div>
+  <div id="book">The alchemist</div>
+  <div id="author"> by Paolo Coelho</div>
+  <div id="price"> 120 </div>
+  <button onclick="addToCart('alchemist')">Add to Cart</button>
+</div>
+</div>
+
+<div style="width: 33%; float: left;">
+  <div id="india_was_wonder" class="opacity-0">
+  <div class="panel-body" style="height: 250px; width: 200px;">
+    <img src="india_wonder.jpg" alt="The wonder that India was" style="margin: auto; height: 100%; width: 100%;">
+   </div>
+  <div id="book">The wonder that India was</div>
+  <div id="author"> by A.L. Basham</div>
+  <div id="price"> 100 </div>
+  <button onclick="addToCart('india_was_wonder')">Add to Cart</button>
+</div>
+</div>
+
+<div style="width: 33%;  float: left;">
+                        
+  <div id="sepoy_mutiny_1857" class="opacity-0">
+  <div class="panel-body" style="height: 250px; width: 200px;">
+      <img src="sepoy_mutiny.jpg" alt="sepoy_mutiny" style="height: 100%; width: 100%;">
+  </div>
+  <div id="book">The sepoy mutiny and the revolt of 1857</div>
+  <div id="author">R.C.Majumdar</div>
+  <div id="price"> 175 </div>
+  <button onclick="addToCart('sepoy_mutiny_1857')">Add to Cart</button>
+  </div>
+</div>
+
+<div style="width: 33%;  float: left;">
+                            
+  <div id="frankl_book" class="opacity-0">
+  <div class="panel-body" style="height: 250px; width: 300px;">
+      <img src="frankl.jpg" alt="Man's search for meaning" style="height: 100%; width: 100%;">
+  </div>
+  <div id="book">Man's search for meaning</div>
+  <div id="author">Victor Frankl</div>
+  <div id="price"> 200 </div>
+  <button onclick="addToCart('frankl_book')">Add to Cart</button>
+</div>
+</div>
+
+<script>
+    let count = 0;
+    let totalPrice = 0;
+    document.body.onload = addElement;
+    function addToCart(id){
+        count = count + 1;
+        document.getElementById("cart_img").innerHTML = count;
+        document.getElementById("cart_img").setAttribute("visibility", "");
+        let div1 = document.getElementById(id);
+        let arr = div1.querySelectorAll("div");
+        let book = arr[1].innerHTML;
+        let author = arr[2].innerHTML;
+        let price = arr[3].innerHTML;
+        
+        totalPrice = Number(totalPrice) + Number(price);
+        const parentNode = document.createElement("div");
+        parentNode.setAttribute("class","modal-dialog");
+
+        const node = document.createElement("div");
+        node.setAttribute("class","modal-body");
+
+        const bookNode = document.createElement("div");
+        bookNode.textContent = book + " by "+ author;
+        bookNode.setAttribute("class","modal-title");
+        node.appendChild(bookNode);
+
+        const sellerNode = document.createElement("div");
+        sellerNode.textContent = "Sold by ****";
+        sellerNode.setAttribute("class","modal-title");
+        node.appendChild(sellerNode);
+
+        const priceNode = document.createElement("div");
+        priceNode.textContent = "Price : "+price;
+        priceNode.setAttribute("class","modal-title");
+        node.appendChild(priceNode);
+
+        const divider = document.createElement("div");
+        divider.setAttribute("class","modal-footer");
+        node.appendChild(divider);
+
+        //parentNode.appendChild(node);
+
+        document.getElementById("cart_item").appendChild(node);
+        document.getElementById("price_total").innerHTML = "Total : "+totalPrice;
+        document.getElementById("cart_title").innerHTML = "Your cart : ";
+        
+    }
+
+</script>
+</body>
+</html>
